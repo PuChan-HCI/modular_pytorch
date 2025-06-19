@@ -4,18 +4,18 @@ The Python scripts in this directory were generated using the notebook 05. Going
 
 They breakdown as follows:
 
-**data_setup.py** - a file to prepare and download data if needed.
-**engine.py** - a file containing various training functions.
-**model_builder.py** - a file to create a PyTorch TinyVGG model.
-**train.py** - a file to leverage all other files and train a target PyTorch model.
+**data_setup.py** - a file to prepare and download data if needed.<br/>
+**engine.py** - a file containing various training functions.<br/>
+**model_builder.py** - a file to create a PyTorch TinyVGG model.<br/>
+**train.py** - a file to leverage all other files and train a target PyTorch model.<br/>
 **utils.py** - a file dedicated to helpful utility functions.
 
-To test this modular pytorch project, start by running data_get.py to set up the image files.
+To test this modular pytorch project, start by running data_get.py to set up the image files.<br/>
 You can perform this by running the following line in your command line,
 
 python data_get.py
 
-After that train.py will perform a basic image classification program using a tiny vgg model.
+After that train.py will perform a basic image classification program using a tiny vgg model.<br/>
 You can perform this by running the folllowing line in your command line,
 
 python train.py
