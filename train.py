@@ -22,7 +22,7 @@ def main():
                 BATCH_SIZE = int(sys.argv[ix + 1])
             if sys.argv[ix] == "--num_epochs":
                 NUM_EPOCHS = int(sys.argv[ix + 1])
-            if sys.argv[ix] == "--batch_size":
+            if sys.argv[ix] == "--learning_rate":
                 LEARNING_RATE = float(sys.argv[ix + 1])
         if NUM_EPOCHS == 0:
             NUM_EPOCHS = 10
@@ -30,7 +30,7 @@ def main():
             BATCH_SIZE = 32
         if LEARNING_RATE == 0.0:
             LEARNING_RATE = 0.001
-
+            
     else:
         NUM_EPOCHS = 10
         BATCH_SIZE = 32
