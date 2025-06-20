@@ -30,5 +30,3 @@ python train.py --batch_size BATCH_SIZE --lr LEARNING_RATE --num_epochs NUM_EPOC
 For example,
 
 python train.py --lr 0.001 --num_epochs 100 --batch_size 16
-
-Currently the model cannot be changed, but the other settings can be changed. Feel free to try out different settings and see what results you get.
