@@ -5,7 +5,7 @@ The files in this project break down as follows:
 **`data_setup.py`** - a file to prepare and download data if needed.<br/>
 **`engine.py`** - a file containing various training functions.<br/>
 **`model_builder.py`** - a file to create a PyTorch TinyVGG model.<br/>
-**`train.py`** - a file to leverage all other files and train a target PyTorch model.<br/>
+**`train_classification.py`** - a file to leverage all other files and train a target PyTorch model.<br/>
 **`utils.py`** - a file dedicated to helpful utility functions.
 
 To test this modular pytorch project, start by running data_get.py to set up the image files.<br/>
@@ -16,7 +16,7 @@ python data_get.py
 After that train.py will perform a basic image classification program using a tiny vgg model.<br/>
 You can perform this by running the folllowing line in your command line,
 
-python train.py
+python train_classification.py
 
 Batch size, learning rate, and number of epochs can be edited via the command line. These can be input in any order and any can be ommited. The values default to,<br/>
 Batch_size = 32<br/>
