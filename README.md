@@ -1,8 +1,6 @@
 # modular_pytorch
 
-The Python scripts in this directory were generated using the notebook 05. Going Modular Part 2 (script mode).
-
-They breakdown as follows:
+The files in this project break down as follows:
 
 **`data_setup.py`** - a file to prepare and download data if needed.<br/>
 **`engine.py`** - a file containing various training functions.<br/>
