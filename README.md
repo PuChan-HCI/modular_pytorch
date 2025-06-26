@@ -9,7 +9,7 @@ The files in this project break down as follows:
 **`train_classification.py`** - a file to leverage all other files and train a target PyTorch model.<br/>
 **`utils.py`** - a file dedicated to helpful utility functions.
 
-To test this modular pytorch project, start by running data_get.py to set up the image files. This downloads a dataset of pictures of pizza, steak, and sushi.<br/>
+To test this modular pytorch project, start by running data_get.py to set up the image files. This downloads a dataset of pictures of pizza, steak, and sushi. The files are then spit into folders for each category and are presplit for training and test.<br/>
 You can perform this by running the following line in your command line,
 
 python data_get.py
