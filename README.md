@@ -2,13 +2,14 @@
 
 The files in this project break down as follows:
 
-**`data_setup.py`** - a file to prepare and download data if needed.<br/>
+**`data_get.py`** - a file to download data if needed.<br/>
+**`data_setup.py`** - a file to prepare data.<br/>
 **`engine.py`** - a file containing various training functions.<br/>
 **`model_builder.py`** - a file to create a PyTorch TinyVGG model.<br/>
 **`train_classification.py`** - a file to leverage all other files and train a target PyTorch model.<br/>
 **`utils.py`** - a file dedicated to helpful utility functions.
 
-To test this modular pytorch project, start by running data_get.py to set up the image files.<br/>
+To test this modular pytorch project, start by running data_get.py to set up the image files. This downloads a dataset of pictures of pizza, steak, and sushi.<br/>
 You can perform this by running the following line in your command line,
 
 python data_get.py
