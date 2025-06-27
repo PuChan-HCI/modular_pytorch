@@ -6,6 +6,7 @@ import os
 import sys
 import torch
 import data_setup, engine, model_builder, utils
+import matplotlib.pyplot as plt
 
 from torchvision import transforms
 
@@ -71,13 +72,33 @@ def main():
                                  lr=LEARNING_RATE)
 
     # Start training with help from engine.py
-    engine.train(model=model,
+    history = engine.train(model=model,
                  train_dataloader=train_dataloader,
                  test_dataloader=test_dataloader,
                  loss_fn=loss_fn,
                  optimizer=optimizer,
                  epochs=NUM_EPOCHS,
                  device=device)
+
+    acc = history['train_acc']
+    val_acc = history['test_acc']
+    loss = history['train_loss']
+    val_loss = history['test_loss']
+    
+    plt.figure(figsize=(8, 8))
+    plt.subplot(1, 2, 1)
+    plt.plot(range(NUM_EPOCHS), acc, label='Training Accuracy')
+    plt.plot(range(NUM_EPOCHS), val_acc, label='Validation Accuracy')
+    plt.legend(loc='lower right')
+    plt.title('Training and Validation Accuracy')
+
+    plt.subplot(1, 2, 2)
+    plt.plot(range(NUM_EPOCHS), loss, label='Training Loss')
+    plt.plot(range(NUM_EPOCHS), val_loss, label='Validation Loss')
+    plt.legend(loc='upper right')
+    plt.title('Training and Validation Loss')
+    plt.show()
+    
 
     # Save the model with help from utils.py
     utils.save_model(model=model,
